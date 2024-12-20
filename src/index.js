@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import UiApp from './UiApp';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.css";
+//import App from './App';
+import ListerB from './ListerB';
+import { ListProvider } from './context/ListContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ListProvider>
+    <ListerB/>
+    </ListProvider>
   </React.StrictMode>
 );
 
